@@ -1,0 +1,17 @@
+.show {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 50% 10%;
+    font: 2em sans-serif;
+}
+
+.hide {
+    background-color: #e0e0e0;
+    color: rgba(0,0,0,.87);
+    padding: 50% 10%;
+    font: 1.4em sans-serif;
+}
+
+.mat-chip {
+    margin: 10px;
+}

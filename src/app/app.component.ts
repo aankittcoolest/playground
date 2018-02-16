@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatChipsModule } from '@angular/material/chips'
+
+import { HEROES } from './mock-heroes'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  removable = true
+
+  heroes = HEROES
+
+  toggleSelect(hero) {
+    hero.selected=!hero.selected
+    hero.color = "primary"
+    // hero.selected = !hero.selected
+    // console.log(hero)
+  }
 }
